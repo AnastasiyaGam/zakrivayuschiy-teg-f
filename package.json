@@ -1,0 +1,31 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp",
+    "start": "gulp",
+    "test": "echo 'Привет!'",
+    "check": "prettier --check ./src/**/*.{html,css,js}",
+    "format": "prettier --write ./src/**/*.{html,css,js}",
+    "lint": "stylelint ./src/**/*.css",
+    "lintfix": "stylelint ./src/**/*.css --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "prettier": "^2.8.7",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^7.0.0"
+  }
+}
