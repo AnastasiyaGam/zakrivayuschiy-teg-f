@@ -1,9 +1,19 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --main-font: 'Inter', sans-serif;
   --accent-font: 'PressStart2P', fantasy;
-
   --text-weight: 410;
   --title-weight: 715;
   --max-weight: 715;
+  --bg-gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  /* Резиновые переменные для размеров */
+  --header-width: min(100%, 700px);
+  --header-padding: clamp(14px, 3.7vw, 122.5px);
+  --header-height: clamp(327px, 35vh, 368px); /* Используем vh для плавности */
+
+  /* Резиновая типографика */
+  --title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --subtitle-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }

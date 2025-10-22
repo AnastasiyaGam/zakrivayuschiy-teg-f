@@ -1,18 +1,73 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
+@import url('../fonts/fonts.css');
+@import url('./variables.css');
 
 .page {
   font-family: var(--main-font, sans-serif);
   font-variation-settings: 'wght' var(--text-weight, 410);
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--bg-gradient);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  width: var(--header-width);
+  padding: 0 var(--header-padding);
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  background: #fff;
+  margin: 100px auto 0;
+  box-sizing: border-box;
+}
+
+.header-content {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.header-title {
+  color: #000;
+  font-family: var(--accent-font);
+  font-size: var(--title-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.header-subtitle {
+  color: #000;
+  font-family: var(--accent-font);
+  font-size: var(--subtitle-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Точные значения для мобильных и десктопа */
+@media (width <= 375px) {
+  .header {
+    height: 327px; /* Точная высота для мобилки */
+    padding: 0 14px;
+  }
+}
+
+@media (width >= 1440px) {
+  .header {
+    height: 368px; /* Точная высота для десктопа */
+  }
+}
+
+/* Плавный переход для промежуточных размеров */
+@media (width >= 376px) and (width <= 1439px) {
+  .header {
+    height: calc(327px + (368 - 327) * (100vw - 376px) / (1440 - 376));
+  }
 }
