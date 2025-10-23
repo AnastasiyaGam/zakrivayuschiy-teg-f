@@ -32,9 +32,9 @@ a {
 
 button,
 input {
-  color: currentcolor;
   font-family: inherit;
   font-size: inherit;
+  color: currentcolor;
 }
 
 ul,

@@ -12,23 +12,70 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
   </head>
   <body class="page">
-    <!-- SVG symbols -->
-    <svg style="display: none">
-      <symbol id="floppy-icon" viewBox="0 0 39 39" fill="none">
-        <path
-          fill="currentColor"
-          d="M0 0h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zM33 0v3h-3V0zm-3 0v3h-3V0zm-3 0v3h-3V0zm-3 0v3h-3V0zm-3 0v3h-3V0zm-3 0v3h-3V0zm-3 0v3h-3V0zm-3 0v3H9V0zM9 0v3H6V0zM6 0v3H3V0zm30 3v3h-3V3zM9 6v3H6V6zm0-3v3H6V3zm0 6v3H6V9zm21-3v3h-3V6zm0-3v3h-3V3zm0 6v3h-3V9zm-6-3v3h-3V6zm0-3v3h-3V3zm0 6v3h-3V9zm6 3v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3H9v-3zm-3 0v3H6v-3zm24 9v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3H9v-3zm-3 0v3H6v-3zm24 3v3h-3v-3zM9 24v3H6v-3zm24 3v3h-3v-3zM9 27v3H6v-3zm24 3v3h-3v-3zM9 30v3H6v-3zm0 3v3H6v-3zm24 0v3h-3v-3zm3 3v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3H9v-3zm-3 0v3H6v-3zm-3 0v3H3v-3zm33 3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3V9h3zm0-3h-3V6h3z"
-        />
-      </symbol>
-    </svg>
-
     <header class="header">
-      <div class="header-content">
-        <h1 class="header-title">&lt;/HTML&gt;</h1>
-        <p class="header-subtitle">закрывающий тег</p>
+      <div class="header__content">
+        <h1 class="header__title">&lt;/HTML&gt;</h1>
+        <p class="header__subtitle">закрывающий тег</p>
       </div>
     </header>
-    <main></main>
+
+    <main class="main">
+      <article class="post">
+        <header class="post__header">
+          <h2 class="post__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        </header>
+
+        <div class="post__image-container">
+          <img class="post__image" src="./images/content/image.png" alt="Нулевой спринт" />
+          <div class="post__label">&lt;/HTML&gt;</div>
+        </div>
+
+        <div class="post__content">
+          <div class="post__text">
+            <p class="post__paragraph">
+              Это было самое начало пути. На этом этапе важно было проникнуться основами и
+              настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше
+              будущее.
+            </p>
+            <p class="post__paragraph post__paragraph--last">
+              Место для ваших воспоминаний о начале обучения.
+            </p>
+          </div>
+
+          <div class="post__actions">
+            <button class="button button--icon" aria-label="Лайк">
+              <svg class="button__icon" width="27" height="24" viewBox="0 0 27 24" fill="none">
+                <path d="M6 0H3V3H6V0Z" fill="black" />
+                <path d="M9 0H6V3H9V0Z" fill="black" />
+                <path d="M3 3H0V6H3V3Z" fill="black" />
+                <path d="M3 6H0V9H3V6Z" fill="black" />
+                <path d="M3 9H0V12H3V9Z" fill="black" />
+                <path d="M12 0H9V3H12V0Z" fill="black" />
+                <path d="M6 12H3V15H6V12Z" fill="black" />
+                <path d="M9 15H6V18H9V15Z" fill="black" />
+                <path d="M12 18H9V21H12V18Z" fill="black" />
+                <path d="M21 0H24V3H21V0Z" fill="black" />
+                <path d="M18 0H21V3H18V0Z" fill="black" />
+                <path d="M24 3H27V6H24V3Z" fill="black" />
+                <path d="M24 6H27V9H24V6Z" fill="black" />
+                <path d="M24 9H27V12H24V9Z" fill="black" />
+                <path d="M15 0H18V3H15V0Z" fill="black" />
+                <path d="M21 12H24V15H21V12Z" fill="black" />
+                <path d="M18 15H21V18H18V15Z" fill="black" />
+                <path d="M15 18H18V21H15V18Z" fill="black" />
+                <path d="M15 3H12V6H15V3Z" fill="black" />
+                <path d="M15 21H12V24H15V21Z" fill="black" />
+              </svg>
+            </button>
+
+            <button class="button button--text">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
