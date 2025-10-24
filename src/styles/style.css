@@ -134,7 +134,6 @@
   mix-blend-mode: hard-light;
 }
 
-/* Современная обводка с поддержкой */
 @supports (-webkit-text-stroke: 1px var(--label-stroke-color)) {
   .post__label {
     -webkit-text-stroke: 1px var(--label-stroke-color);
@@ -142,7 +141,6 @@
   }
 }
 
-/* Фоллбэк для браузеров без поддержки -webkit-text-stroke */
 @supports not (-webkit-text-stroke: 1px var(--label-stroke-color)) {
   .post__label {
     text-shadow: -1px -1px 0 var(--label-stroke-color), 1px -1px 0 var(--label-stroke-color),
