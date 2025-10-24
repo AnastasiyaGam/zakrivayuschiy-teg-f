@@ -27,3 +27,6 @@ Thumbs.db
 
 # Backup файлы
 *.backup
+
+# Local Netlify folder
+.netlify
