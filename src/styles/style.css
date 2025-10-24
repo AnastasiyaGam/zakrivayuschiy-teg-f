@@ -363,6 +363,48 @@
   cursor: pointer;
 }
 
+/* CSS фильтры для изображений - мягкая версия */
+
+/* 1. Любопытство - легкая насыщенность */
+.filter-curious {
+  filter: saturate(1.3);
+}
+
+/* 2. Сомнения - легкое размытие и приглушение */
+.filter-doubt {
+  filter: blur(0.5px) grayscale(0.2);
+}
+
+/* 3. Уверенность - небольшой контраст */
+.filter-confident {
+  filter: contrast(1.2);
+}
+
+/* 4. Одержимость - МНОЖЕСТВЕННЫЙ ФИЛЬТР (мягкий) */
+.filter-obsessed {
+  filter: hue-rotate(45deg) saturate(1.4);
+}
+
+/* Вариант 4 - Мягкий теплый свет */
+.filter-support {
+  filter: brightness(1.08) contrast(1.05);
+}
+
+/* 6. Озарение - легкое осветление */
+.filter-insight {
+  filter: brightness(1.15);
+}
+
+/* 7. Перерыв - приглушенные цвета */
+.filter-break {
+  filter: grayscale(0.4) brightness(0.95);
+}
+
+/* 8. Осознание - легкая насыщенность и контраст */
+.filter-awareness {
+  filter: saturate(1.2) contrast(1.1);
+}
+
 /* Десктоп версия - ТОЧНЫЕ РАЗМЕРЫ */
 @media (width >= 1440px) {
   #save-button {
