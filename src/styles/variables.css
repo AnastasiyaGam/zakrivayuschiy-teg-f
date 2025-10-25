@@ -39,4 +39,8 @@
 
   /* Цвет обводки для лейбла */
   --label-stroke-color: #fff;
+
+  /* Цвета для анимации сердца */
+  --contour-color: #000;
+  --animation-fill-color: #f00;
 }
