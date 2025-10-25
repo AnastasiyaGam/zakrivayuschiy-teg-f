@@ -100,6 +100,7 @@
   object-fit: cover;
 }
 
+/* Замените текущий .post__label на это: */
 .post__label {
   position: absolute;
   top: 25px;
@@ -112,8 +113,20 @@
   color: var(--text-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  text-shadow: -1px 0 var(--label-stroke-color), 0 1px var(--label-stroke-color),
-    1px 0 var(--label-stroke-color), 0 -1px var(--label-stroke-color);
+}
+
+@supports (-webkit-text-stroke: 1px var(--label-stroke-color)) {
+  .post__label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--label-stroke-color);
+  }
+}
+
+@supports not (-webkit-text-stroke: 1px var(--label-stroke-color)) {
+  .post__label {
+    text-shadow: -1px 0 var(--label-stroke-color), 0 1px var(--label-stroke-color),
+      1px 0 var(--label-stroke-color), 0 -1px var(--label-stroke-color);
+  }
 }
 
 /* Контент карточки */
