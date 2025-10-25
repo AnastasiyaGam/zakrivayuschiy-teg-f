@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <!-- Фавиконы -->
     <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" />
@@ -38,7 +38,7 @@
             alt="Губка Боб радуется, глядя на радугу"
             loading="lazy"
           />
-          <div class="post__label" aria-hidden="true">&lt;Любопытство&gt;</div>
+          <span class="post__label" aria-hidden="true">&lt;Любопытство&gt;</span>
         </div>
 
         <div class="post__content">
@@ -48,12 +48,12 @@
               настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше
               будущее.
             </p>
-            <p class="post__paragraph post__paragraph--last">О дивный новый мир!</p>
+            <p class="post__paragraph">О дивный новый мир!</p>
           </div>
 
           <div class="post__actions">
-            <button class="button button--icon card__icon-button" aria-label="Лайк">
-              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <button class="button button--icon card__icon-button" type="button" aria-label="Лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
                 <g class="heart">
                   <path
                     class="contour"
@@ -80,7 +80,7 @@
               </svg>
             </button>
 
-            <button class="button button--text card__like-button">
+            <button class="button button--text card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -100,7 +100,7 @@
             alt="Губка Боб задумчиво сидит в кафе"
             loading="lazy"
           />
-          <div class="post__label" aria-hidden="true">&lt;Сомнения&gt;</div>
+          <span class="post__label" aria-hidden="true">&lt;Сомнения&gt;</span>
         </div>
 
         <div class="post__content">
@@ -111,12 +111,12 @@
               чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие вопросы: с
               чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?
             </p>
-            <p class="post__paragraph post__paragraph--last">Может это просто не моё?</p>
+            <p class="post__paragraph">Может это просто не моё?</p>
           </div>
 
           <div class="post__actions">
-            <button class="button button--icon card__icon-button" aria-label="Лайк">
-              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <button class="button button--icon card__icon-button" type="button" aria-label="Лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
                 <g class="heart">
                   <path
                     class="contour"
@@ -143,7 +143,7 @@
               </svg>
             </button>
 
-            <button class="button button--text card__like-button">
+            <button class="button button--text card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -163,7 +163,7 @@
             alt="Губка Боб хвастается своими накаченными ногами"
             loading="lazy"
           />
-          <div class="post__label" aria-hidden="true">&lt;Уверенность&gt;</div>
+          <span class="post__label" aria-hidden="true">&lt;Уверенность&gt;</span>
         </div>
 
         <div class="post__content">
@@ -173,14 +173,12 @@
               померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться
               успехами и поверить в себя.
             </p>
-            <p class="post__paragraph post__paragraph--last">
-              Как же я хорош, как мощны мои лапищи.
-            </p>
+            <p class="post__paragraph">Как же я хорош, как мощны мои лапищи.</p>
           </div>
 
           <div class="post__actions">
-            <button class="button button--icon card__icon-button" aria-label="Лайк">
-              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <button class="button button--icon card__icon-button" type="button" aria-label="Лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
                 <g class="heart">
                   <path
                     class="contour"
@@ -207,7 +205,7 @@
               </svg>
             </button>
 
-            <button class="button button--text card__like-button">
+            <button class="button button--text card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -227,7 +225,7 @@
             alt="Сквидвард нервно дергается глаз"
             loading="lazy"
           />
-          <div class="post__label" aria-hidden="true">&lt;Одержимость&gt;</div>
+          <span class="post__label" aria-hidden="true">&lt;Одержимость&gt;</span>
         </div>
 
         <div class="post__content">
@@ -238,14 +236,12 @@
               недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы
               сделать идеально, старались просто сделать.
             </p>
-            <p class="post__paragraph post__paragraph--last">
-              Когда пытаешься выровнять всё по pixel perfect.
-            </p>
+            <p class="post__paragraph">Когда пытаешься выровнять всё по pixel perfect.</p>
           </div>
 
           <div class="post__actions">
-            <button class="button button--icon card__icon-button" aria-label="Лайк">
-              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <button class="button button--icon card__icon-button" type="button" aria-label="Лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
                 <g class="heart">
                   <path
                     class="contour"
@@ -272,7 +268,7 @@
               </svg>
             </button>
 
-            <button class="button button--text card__like-button">
+            <button class="button button--text card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -292,7 +288,7 @@
             alt="Губка Боб поддерживает Скидварда и бросает в него лепестки цветов"
             loading="lazy"
           />
-          <div class="post__label" aria-hidden="true">&lt;Поддержка&gt;</div>
+          <span class="post__label" aria-hidden="true">&lt;Поддержка&gt;</span>
         </div>
 
         <div class="post__content">
@@ -304,14 +300,12 @@
               поддавался. Осваивать что-то новое легче, когда рядом есть единомышленники, не правда
               ли?
             </p>
-            <p class="post__paragraph post__paragraph--last">
-              Ну ты чего, не расстраивайся! У тебя всё получится!
-            </p>
+            <p class="post__paragraph">Ну ты чего, не расстраивайся! У тебя всё получится!</p>
           </div>
 
           <div class="post__actions">
-            <button class="button button--icon card__icon-button" aria-label="Лайк">
-              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <button class="button button--icon card__icon-button" type="button" aria-label="Лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
                 <g class="heart">
                   <path
                     class="contour"
@@ -338,7 +332,7 @@
               </svg>
             </button>
 
-            <button class="button button--text card__like-button">
+            <button class="button button--text card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -358,7 +352,7 @@
             alt="Губка удивлённо улыбается"
             loading="lazy"
           />
-          <div class="post__label" aria-hidden="true">&lt;Озарение&gt;</div>
+          <span class="post__label" aria-hidden="true">&lt;Озарение&gt;</span>
         </div>
 
         <div class="post__content">
@@ -368,14 +362,12 @@
               показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под
               другим углом.
             </p>
-            <p class="post__paragraph post__paragraph--last">
-              А может мне всерьез использовать нейросети?
-            </p>
+            <p class="post__paragraph">А может мне всерьез использовать нейросети?</p>
           </div>
 
           <div class="post__actions">
-            <button class="button button--icon card__icon-button" aria-label="Лайк">
-              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <button class="button button--icon card__icon-button" type="button" aria-label="Лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
                 <g class="heart">
                   <path
                     class="contour"
@@ -402,7 +394,7 @@
               </svg>
             </button>
 
-            <button class="button button--text card__like-button">
+            <button class="button button--text card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -422,7 +414,7 @@
             alt="To-dolist: nothing"
             loading="lazy"
           />
-          <div class="post__label" aria-hidden="true">&lt;Перерыв&gt;</div>
+          <span class="post__label" aria-hidden="true">&lt;Перерыв&gt;</span>
         </div>
 
         <div class="post__content">
@@ -433,12 +425,12 @@
               жизнь не забыть пожить. В такие моменты очень нужна концентрация. Вспомните, откуда вы
               её черпали.
             </p>
-            <p class="post__paragraph post__paragraph--last">Мотивация просто подняться.</p>
+            <p class="post__paragraph">Мотивация просто подняться.</p>
           </div>
 
           <div class="post__actions">
-            <button class="button button--icon card__icon-button" aria-label="Лайк">
-              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <button class="button button--icon card__icon-button" type="button" aria-label="Лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
                 <g class="heart">
                   <path
                     class="contour"
@@ -465,7 +457,7 @@
               </svg>
             </button>
 
-            <button class="button button--text card__like-button">
+            <button class="button button--text card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -485,7 +477,7 @@
             alt="Губка бодибилдер разрывает на себе футболку"
             loading="lazy"
           />
-          <div class="post__label" aria-hidden="true">&lt;Осознание&gt;</div>
+          <span class="post__label" aria-hidden="true">&lt;Осознание&gt;</span>
         </div>
 
         <div class="post__content">
@@ -497,12 +489,12 @@
               полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь
               часто путь — и есть результат.
             </p>
-            <p class="post__paragraph post__paragraph--last">Всё-таки круто получилось:)</p>
+            <p class="post__paragraph">Всё-таки круто получилось:)</p>
           </div>
 
           <div class="post__actions">
-            <button class="button button--icon card__icon-button" aria-label="Лайк">
-              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+            <button class="button button--icon card__icon-button" type="button" aria-label="Лайк">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" aria-hidden="true">
                 <g class="heart">
                   <path
                     class="contour"
@@ -529,7 +521,7 @@
               </svg>
             </button>
 
-            <button class="button button--text card__like-button">
+            <button class="button button--text card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -540,13 +532,12 @@
     <!-- Кнопка для открытия модального окна -->
     <button
       class="button button--save"
-      id="save-button"
       onclick="saveDialog.showModal()"
       aria-controls="saveDialog"
       type="button"
     >
       <svg class="button__icon--floppy" width="28" height="28" aria-hidden="true">
-        <use href="#floppy-icon"></use>
+        <use href="./svg/floppy.svg#floppy-icon"></use>
       </svg>
       <span class="button__text">Сохранить на память</span>
     </button>
@@ -556,28 +547,18 @@
       <div class="dialog__content">
         <div class="dialog__row">
           <svg class="dialog__image" aria-hidden="true">
-            <use href="#floppy-icon"></use>
+            <use href="./svg/floppy.svg#floppy-icon"></use>
           </svg>
           <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
         </div>
 
         <form method="dialog">
-          <button class="dialog__button" type="submit">
+          <button class="button dialog__button" type="submit">
             <span class="button__text">ОК</span>
           </button>
         </form>
       </div>
     </dialog>
-
-    <!-- SVG Sprite для переиспользования иконок -->
-    <svg style="display: none" aria-hidden="true">
-      <symbol id="floppy-icon" viewBox="0 0 39 39" fill="none">
-        <path
-          fill="currentColor"
-          d="M0 0h3v3H0zM0 3h3v3H0zM0 6h3v3H0zM0 9h3v3H0zM0 12h3v3H0zM0 15h3v3H0zM0 18h3v3H0zM0 21h3v3H0zM0 24h3v3H0zM0 27h3v3H0zM0 30h3v3H0zM0 33h3v3H0zM0 36h3v3H0zM33 0v3h-3V0zM30 0v3h-3V0zM27 0v3h-3V0zM24 0v3h-3V0zM21 0v3h-3V0zM18 0v3h-3V0zM15 0v3h-3V0zM12 0v3H9V0zM9 0v3H6V0zM6 0v3H3V0zM36 3v3h-3V3zM9 6v3H6V6zM9 3v3H6V3zM9 9v3H6V9zM30 6v3h-3V6zM30 3v3h-3V3zM30 9v3h-3V9zM24 6v3h-3V6zM24 3v3h-3V3zM24 9v3h-3V9zM30 12v3h-3v-3zM27 12v3h-3v-3zM24 12v3h-3v-3zM21 12v3h-3v-3zM18 12v3h-3v-3zM15 12v3h-3v-3zM12 12v3H9v-3zM9 12v3H6v-3zM33 21v3h-3v-3zM30 21v3h-3v-3zM27 21v3h-3v-3zM24 21v3h-3v-3zM21 21v3h-3v-3zM18 21v3h-3v-3zM15 21v3h-3v-3zM12 21v3H9v-3zM9 21v3H6v-3zM33 24v3h-3v-3zM9 24v3H6v-3zM33 27v3h-3v-3zM9 27v3H6v-3zM33 30v3h-3v-3zM9 30v3H6v-3zM9 33v3H6v-3zM33 33v3h-3v-3zM36 36v3h-3v-3zM33 36v3h-3v-3zM30 36v3h-3v-3zM27 36v3h-3v-3zM24 36v3h-3v-3zM21 36v3h-3v-3zM18 36v3h-3v-3zM15 36v3h-3v-3zM12 36v3H9v-3zM9 36v3H6v-3zM6 36v3H3v-3zM39 39h-3v-3h3zM39 36h-3v-3h3zM39 33h-3v-3h3zM39 30h-3v-3h3zM39 27h-3v-3h3zM39 24h-3v-3h3zM39 21h-3v-3h3zM39 18h-3v-3h3zM39 15h-3v-3h3zM39 12h-3V9h3zM39 9h-3V6h3z"
-        />
-      </symbol>
-    </svg>
 
     <script src="./scripts/like.js"></script>
   </body>

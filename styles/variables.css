@@ -23,8 +23,7 @@
   --content-padding: 25px;
 
   /* Высоты по макету */
-  --header-height-mobile: 327px;
-  --header-height-desktop: 368px;
+  --header-padding-vertical: clamp(120px, 25vw, 164px);
 
   /* Типографика */
   --title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);

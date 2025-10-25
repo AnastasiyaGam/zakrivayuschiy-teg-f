@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
   width: var(--content-width);
-  height: var(--header-height-mobile);
+  min-height: 327px;
   margin: 100px auto 0;
   padding: 0 var(--section-padding);
   border: 2px solid var(--border-color);
@@ -98,6 +98,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 /* Замените текущий .post__label на это: */
@@ -161,7 +162,9 @@
   gap: 7px;
 }
 
+/* Базовые стили для ВСЕХ кнопок */
 .button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,53 +172,13 @@
   border: none;
   font-family: inherit;
   background: transparent;
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
-}
-
-/* Кнопка с иконкой */
-.button--icon {
-  flex-shrink: 0;
-  width: 38px;
-  height: 38px;
-  border: 2px solid transparent;
-}
-
-.button--icon:focus-visible {
-  border-color: var(--border-color);
-  outline: none;
-}
-
-/* Текстовая кнопка */
-.button--text {
-  position: relative;
-  border: 2px solid var(--border-color);
-  font-family: var(--accent-font);
-  font-size: 14px;
-  background: var(--bg-color);
   overflow: hidden;
 }
 
-/* Кнопка сохранения */
-#save-button {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  width: 306px;
-  height: 84px;
-  margin: 50px auto 100px;
-  border: 2px solid var(--border-color);
-  font-family: var(--accent-font);
-  font-size: 14px;
-  background: var(--bg-color);
-  overflow: hidden;
-}
-
-/* Эффект наведения для всех текстовых кнопок */
-.button--text::before,
-#save-button::before {
+/* Общий эффект наведения для ВСЕХ кнопок */
+.button::before {
   content: '';
   position: absolute;
   top: 0;
@@ -228,9 +191,59 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.button--text:hover::before,
-#save-button:hover::before {
+.button:hover::before {
   transform: scaleX(1);
+}
+
+/* Общий фокус для ВСЕХ кнопок */
+.button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--text-color);
+}
+
+/* Кнопка с иконкой (исключение - убираем некоторые общие стили) */
+.button--icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  overflow: visible;
+}
+
+.button--icon::before {
+  display: none; /* Убираем эффект наведения для иконки */
+}
+
+.button--icon:focus-visible {
+  border-color: var(--border-color);
+  box-shadow: none;
+}
+
+.like-icon {
+  width: 39px;
+  height: 36px;
+}
+
+/* Текстовая кнопка */
+.button--text {
+  border: 2px solid var(--border-color);
+  font-family: var(--accent-font);
+  font-size: 14px;
+  background: var(--bg-color);
+}
+
+/* Кнопка сохранения */
+.button--save {
+  flex-direction: column;
+  gap: 8px;
+  width: 306px;
+  height: 84px;
+  margin: 50px auto 100px;
+  border: 2px solid var(--border-color);
+  font-family: var(--accent-font);
+  font-size: 14px;
+  background: var(--bg-color);
 }
 
 .button__text {
@@ -258,13 +271,6 @@
 /* Блокировка скролла при открытом модальном окне */
 body:has(dialog[open]) {
   overflow: hidden;
-}
-
-.button--text:focus-visible,
-#save-button:focus-visible,
-.dialog__button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0 var(--text-color);
 }
 
 /* Модальное окно */
@@ -314,31 +320,12 @@ body:has(dialog[open]) {
 }
 
 .dialog__button {
-  position: relative;
   width: 100%;
   height: 38px;
   border: 2px solid var(--border-color);
   font-family: var(--accent-font);
   font-size: 14px;
   background: var(--bg-color);
-  overflow: hidden;
-}
-
-.dialog__button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--text-color);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
-}
-
-.dialog__button:hover::before {
-  transform: scaleX(1);
 }
 
 /* Фильтры для изображений */
@@ -376,7 +363,12 @@ body:has(dialog[open]) {
 
 /* Адаптивность */
 @media (width <= 375px) {
-  .header,
+  .header {
+    width: 100%;
+    min-height: 327px;
+    padding: 0 var(--section-padding);
+  }
+
   .post {
     width: 100%;
   }
@@ -385,17 +377,18 @@ body:has(dialog[open]) {
     right: 11px;
   }
 
-  #save-button {
+  .button--save {
     width: 306px;
   }
 }
 
 @media (width >= 1440px) {
   .header {
-    height: var(--header-height-desktop);
+    min-height: 368px;
+    padding: 0 var(--section-padding);
   }
 
-  #save-button {
+  .button--save {
     flex-direction: row;
     width: 335px;
     height: 55px;

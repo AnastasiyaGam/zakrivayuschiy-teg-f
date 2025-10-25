@@ -81,6 +81,8 @@
 /* Анимация масштабирования сердца при лайке */
 .like-icon.is-liked .heart {
   animation: heart-scale 0.3s 0.1s ease-in;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
 /* Анимация появления искр при лайке */
